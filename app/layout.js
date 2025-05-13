@@ -1,11 +1,5 @@
-import { Inter } from "next/font/google";
 import "./_styles/globals.css";
 import NavBar from "./_components/NavBar";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "UI Assessment",
@@ -15,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <NavBar />
         {children}
       </body>

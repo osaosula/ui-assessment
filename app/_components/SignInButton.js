@@ -23,8 +23,8 @@ export default function SignInButton() {
       <div
         className="absolute w-[30px] h-[30px] bg-[#E5C8C8] rounded-[500px]"
         style={{
-          animation: `rotateSkewAnimation 2.5s ease-in-out ${ballStyles[0]?.delay} infinite`,
-          transform: `rotate(${ballStyles[0]?.rotate}) skew(${ballStyles[0]?.skew})`,
+          animation: `rotateSkewAnimation 2.5s ease-in-out ${ballStyles[0]?.delay} forwards`,
+          transform: `rotate(${ballStyles[0]?.rotate}) skew(${ballStyles[0]?.skew}) `,
         }}
       ></div>
 
@@ -32,13 +32,12 @@ export default function SignInButton() {
       <div
         className="absolute w-[54] h-[33] bg-[#F7BCE9] rounded-[500px]"
         style={{
-          animation: `rotateSkewAnimation 2.5s ease-in-out ${ballStyles[1]?.delay} infinite`,
-          transform: `rotate(${ballStyles[1]?.rotate}) skew(${ballStyles[1]?.skew})`,
+          animation: `rotateSkewAnimation 2.5s ease-in-out ${ballStyles[1]?.delay} forwards`,
+          transform: `rotate(${ballStyles[1]?.rotate}) skew(${ballStyles[1]?.skew}) `,
         }}
       ></div>
 
-      {/* Sign In Button */}
-      <button className="w-[99px] h-[45px] backdrop-blur-[10px] rounded-[30px] fill-[#FFFFFF] opacity-50 ">
+      <button className="relative z-10 w-[99px] h-[45px] backdrop-blur-[10px] rounded-[30px] fill-[#FFFFFF] opacity-50 ">
         Sign In
       </button>
 
